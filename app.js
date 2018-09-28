@@ -8,8 +8,8 @@ const fs = require('fs');
 
 let http = require('http');
 let https = require('https');
-let privateKey  = fs.readFileSync('/public/ssl/private.key', 'utf8');
-let certificate = fs.readFileSync('public/ssl/certificate.crt', 'utf8');
+let privateKey  = fs.readFileSync('/var/www/html/https-backend-node-server/public/ssl/private.key', 'utf8');
+let certificate = fs.readFileSync('/var/www/html/https-backend-node-server/public/ssl/certificate.crt', 'utf8');
 let credentials = {key: privateKey, cert: certificate};
 
 
